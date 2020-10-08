@@ -1,0 +1,24 @@
+dword masterFileID
+dword 0x01
+byte type
+byte count (could be word if first byte & 0x80 != 0)
+loop count
+   qword hash
+   dword count1
+   loop count1
+      byte length (could be word if first byte & 0x80 != 0)
+      char[length*2] unicode text
+   endloop
+   dword count2
+   loop count2
+      dword unk
+   endloop
+   byte count3
+   loop count3
+      dword count4
+      loop count4
+	  byte length (could be word if first byte & 0x80 != 0)
+          char[length*2] unicode text          
+      endloop 	
+   endloop
+endloop

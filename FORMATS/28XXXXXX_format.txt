@@ -1,0 +1,17 @@
+dword masterFileID
+loop not EOF
+byte type1
+byte count1 (could be word if first byte & 0x80 != 0)
+loop count1
+   dword index
+   dword fileID
+endloop
+byte type2
+byte count2 (could be word if first byte & 0x80 != 0)
+loop count2
+   dword index
+   byte length
+   char[length] fileDescription
+endloop
+endloop
+

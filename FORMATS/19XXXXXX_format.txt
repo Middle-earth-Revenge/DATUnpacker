@@ -1,0 +1,22 @@
+dword masterFileID
+dword count_of_records
+loop records
+   dword index
+   byte len
+   char[len] group_name
+   dword recordID
+   dword link_to_40XXXXXX
+   dword type1
+   dword type2
+   dword link_to_42XXXXXX
+   dword type3
+   dword type4
+   byte[15] unknown2
+   dword link_to_78XXXXXX
+   byte unknown3
+   dword unknown4
+   dword link_to_40XXXXXX
+   dword 0xFFFFFFFF
+   dword unknown5
+endloop
+                                 

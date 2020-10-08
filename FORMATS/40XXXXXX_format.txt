@@ -1,0 +1,11 @@
+dword masterFileID
+byte type
+byte count_of_records (if type == 0x4 count = 6, else this value)
+word unknown
+byte unknown
+loop records
+   dword link_to_41XXXXXX
+endloop
+dword 0x00
+dword 0x0F
+
